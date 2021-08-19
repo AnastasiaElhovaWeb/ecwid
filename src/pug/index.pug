@@ -1,0 +1,66 @@
+extends blocks/_layout
+block title
+    title Главная страница
+block content
+
+
+    include blocks/_header
+
+    .content
+        .container
+            .row
+                .col-12
+                    .slider
+                        .slider__inner
+                            .slider__item
+                                img.slider__img(src='/assets/images/slider/slider-1.png' alt='')
+                            .slider__item
+                                img.slider__img(src='/assets/images/slider/slider-2.jpg' alt='')
+                            .slider__item
+                                img.slider__img(src='/assets/images/slider/slider-3.jpg' alt='')
+                            .slider__item
+                                img.slider__img(src='/assets/images/slider/slider-1.png' alt='')
+                            .slider__item
+                                img.slider__img(src='/assets/images/slider/slider-4.jpg' alt='')
+                        .slider__navigation
+                        .slider__arrow.slider__arrow_left
+                        .slider__arrow.slider__arrow_right
+
+            .row
+                .col-12.advantage
+                    .advantage__list
+                        .advantage__item
+                            .advantage__container_image
+                                img.advantage__image(src='/assets/images/advantages/image-1.png' alt='' title='')
+                            p.advantage__text Только натуральный состав
+                        .advantage__item
+                            .advantage__container_image
+                                img.advantage__image(src='/assets/images/advantages/image-2.png' alt='' title='')
+                            p.advantage__text Актуальное наличие на сайте
+                        .advantage__item
+                            .advantage__container_image
+                                img.advantage__image(src='/assets/images/advantages/image-3.png' alt='' title='')
+                            p.advantage__text Быстрая отправка
+                        .advantage__item
+                            .advantage__container_image
+                                img.advantage__image(src='/assets/images/advantages/image-4.png' alt='' title='')
+                            p.advantage__text Удобное расположение
+                        .advantage__item
+                            .advantage__container_image
+                                img.advantage__image(src='/assets/images/advantages/image-5.png' alt='' title='')
+                            p.advantage__text Помощь в подборе товаров
+
+
+            .row
+                .col-12.col-lg-7.col-xl-7.row.justify-content-center
+                    .col-12.col-lg-11.col-xl-10
+                        h1 Добро пожаловать в наш новый магазин!
+                        p Мы садимся вязать, и вселенная вокруг начинает жить по-другому. Точнее, мы создаем собственную вселенную, в которой мы отдыхаем, вдохновляемся и создаем шедевры. Наш магазин за то, чтобы вы занимались своим любимым делом с удовольствием. Наш магазин – это место, где вам предложат пряжу и инструмент исключительного качества для создания лучших творений, которые вы только задумали. Наш магазин – это место, куда вы просто можете прийти поболтать и выпить чашечку кофе за вязанием
+                .col-12.col-lg-5.col-xl-5.row.justify-content-center.mx-auto
+                    .video
+                        .video__preview
+                        .video__play
+            .row.justify-content-center
+                a.link(href='#') Узнать о нас больше
+
+    footer.footer

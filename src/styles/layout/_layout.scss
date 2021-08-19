@@ -1,0 +1,90 @@
+@font-face {
+  font-family: 'OpenSans';
+  src: url('../fonts/OpenSans-Regular.eot');
+  src: url('../fonts/OpenSans-Regular.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/OpenSans-Regular.svg#OpenSans-Regular') format('svg'),
+  url('../fonts/OpenSans-Regular.ttf') format('truetype'),
+  url('../fonts/OpenSans-Regular.woff') format('woff'),
+  url('../fonts/OpenSans-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'OpenSans';
+  src: url('../fonts/OpenSans-Bold.eot');
+  src: url('../fonts/OpenSans-Bold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/OpenSans-Bold.svg#OpenSans-Bold') format('svg'),
+  url('../fonts/OpenSans-Bold.ttf') format('truetype'),
+  url('../fonts/OpenSans-Bold.woff') format('woff'),
+  url('../fonts/OpenSans-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+
+
+* {
+  box-sizing: border-box;
+  font-family: $font-family, sans-serif;
+  font-weight: 400;
+  font-size: $font-size;
+  color: $black;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: $white;
+}
+
+.navbar {
+
+  background-color: $green;
+
+  &__list {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__link {
+    padding: 0.78rem 15px;
+    line-height: 1.36;
+    color: $white;
+    font-weight: 700;
+  }
+
+  @media (max-width: $large-breakpoint) {
+    display: none;
+  }
+}
+
+
+h1 {
+  font-weight: 700;
+  font-size: 1.14rem;
+  line-height: 1.375;
+  text-transform: uppercase;
+  color: $grey;
+}
+
+p {
+  font-size: 0.86rem;
+  line-height: 2;
+  color: $grey;
+}
+
+.link {
+  font-size: 0.86rem;
+  line-height: 1.36;
+  text-decoration-line: underline;
+  color: $green;
+}
+
+.footer {
+  padding: $indent-middle 0;
+}

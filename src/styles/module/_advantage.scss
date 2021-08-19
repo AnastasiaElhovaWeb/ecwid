@@ -1,0 +1,47 @@
+.advantage {
+  margin: $indent-middle 0 $indent-large;
+  @media (max-width: $medium-breakpoint) {
+    margin: 0 0 $indent-middle;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-around;
+    @media (max-width: $medium-breakpoint) {
+      flex-wrap: wrap;
+    }
+  }
+
+  &__item {
+    width: 13%;
+    text-align: center;
+    @media (max-width: $medium-breakpoint) {
+      width: 50%;
+      margin-top: $indent-normal;
+    }
+    @media (max-width: $small-breakpoint) {
+      width: 100%;
+    }
+  }
+
+  &__container_image {
+    height: 90px;
+    display: inline-block;
+    @media (max-width: $large-breakpoint) {
+      height: 70px;
+    }
+  }
+
+  &__image {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  &__text {
+    font-size: 1rem;
+    line-height: 1.36;
+    color: $green;
+    margin: $indent-small 0 0 0;
+  }
+}

@@ -1,0 +1,99 @@
+
+
+@for $i from 0 through $columns {
+  $columnWidth: ($i / $columns) * 100%;
+
+  // Columns
+  .col-#{$i} {
+    flex: 0 0 $columnWidth;
+    max-width: $columnWidth;
+    padding-right: $padding-col;
+    padding-left: $padding-col;
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  @media (min-width: $small-breakpoint) {
+    .col-sm-#{$i} {
+      flex: 0 0 $columnWidth !important;
+      max-width: $columnWidth !important;
+    }
+  }
+
+  @media (min-width: $medium-breakpoint) {
+    .col-md-#{$i} {
+      flex: 0 0 $columnWidth !important;
+      max-width: $columnWidth !important;
+    }
+  }
+
+  @media (min-width: $large-breakpoint) {
+    .col-lg-#{$i} {
+      flex: 0 0 $columnWidth !important;
+      max-width: $columnWidth !important;
+    }
+  }
+
+  @media (min-width: $xlarge-breakpoint) {
+    .col-xl-#{$i} {
+      flex: 0 0 $columnWidth !important;
+      max-width: $columnWidth !important;
+    }
+  }
+
+}
+
+.container {
+  width: 100%;
+  padding-right: $padding-col;
+  padding-left: $padding-col;
+  margin-right: auto;
+  margin-left: auto;
+  box-sizing: border-box;
+  max-width: $xlarge-container;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: - $padding-col;
+  margin-left: - $padding-col;
+  box-sizing: border-box;
+}
+
+.align-items-start {
+  align-items: flex-start;
+}
+
+.align-items-end {
+  align-items: end;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.justify-content-around {
+  justify-content: space-around;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.p-0 {
+  padding: 0;
+}
+
+.m-0 {
+  margin: 0;
+}
+
+.mx-auto {
+  margin: auto;
+}
